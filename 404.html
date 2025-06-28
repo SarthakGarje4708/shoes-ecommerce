@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <script>
+      /* ----------------------------------------------------------
+         GitHub Pages fallback for React-Router (BrowserRouter).
+
+         जेव्हा /shoes-ecommerce/products सारखा URL रीलोड होतो,
+         GitHub Pages त्या फाइलचा 404 देतो. हा स्क्रिप्ट तो URL
+         परत आपल्या अॅपच्या root (index.html) वर नेतो.
+      ---------------------------------------------------------- */
+      // repo-base = "/shoes-ecommerce" — तुझ्या package.json मधला path
+      var repoBase = "/shoes-ecommerce";
+
+      // पूर्ण पथ = repoBase + request केलेला path
+      var newUrl = repoBase + "/index.html";
+
+      // redirect:
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body></body>
+</html>
